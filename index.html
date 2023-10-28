@@ -17,35 +17,29 @@
                 <div class="portifolio-image__center"></div>
             </section>
             <div class="grid-header__item">
-                <h1 class="portifolio-name">Luciano CCC</h1>
-                <small class="portifolio-role">Software Developer</small>
-                <ul class="portifolio-contacts">
-                    <li><img src="./assets/imagens/github.svg" alt=""></li>
+                <h1 class="portifolio-name js-portifolio-name"></h1>
+                <small class="portifolio-role js-portifolio-role"></small>
+                <ul class="portifolio-contacts js-portifolio-contacts">
+                <!--    <li><img src="./assets/imagens/github.svg" alt=""></li>
                     <li><img src="./assets/imagens/email.svg" alt=""></li>
-                    <li><img src="./assets/imagens/linkedin.svg" alt=""></li>
+                    <li><img src="./assets/imagens/linkedin.svg" alt=""></li> -->
                 </ul>
             </div>
         </div> 
         <div class="grid-resume">
             <h2>Sobre Mim</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                 Delectus a laudantium fuga nulla recusandae odit tempore
-                  earum maxime, dignissimos natus quis quam magni eos quo. 
-                  Est magnam eos officia sint ullam, blanditiis, nobis, 
-                  laboriosam obcaecati excepturi non sunt rem! Omnis, quos
-                   assumenda? Laudantium harum officia laboriosam odio sed
-                    deserunt similique?
-            </p>
+            <p class="js-resume-text"></p>
         </div>
         <div class="grid-btns">
             <div class="grid-row">
                 <button class="btn primary">Meu Curriculo</button>
                 <a class="btn" href="">Fale Comigo</a>
             </div>
-            <a class="btn" href="">Meus Projetos</a>
+            <button class="btn js-btn-projects">Meus Projetos</button>
         </div>
     </div>
-    
+    <section class="modal js-modal"></section>
+    <script type="module" src="./assets/javascript/app.js"></script>
+    <script type="module" scr="./data/data.js"></script>
 </body>
 </html>
