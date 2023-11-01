@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Busca Portifolio</title>
+</head>
+<body>
+
+ 
+ 
+ 
+    <h1 class="name"></h1>
+    <p class="username"></p>
+    <p class="email"></p>
+    <p class="phone"></p>
+    <p class="website"></p>
+    <p class="address"></p>
+    <p class="company"></p>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Usuario</th>
+            </tr>       
+        </thead>
+        <tbody>
+            <tr>
+                <td>"posts name"</td>
+                <td>Leandro</td>
+                <td>Leandro</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <script>
+        async function getUsers() {
+            const resp = await fetch("https://jsonplaceholder.typicode.com/users/")
+            const posts = await resp.json()    
+            
+            document.querySelector(".name").innerText = `Nome: ${posts.name}`
+            document.querySelector(".username").innerText = `User Name: ${posts.username}`
+            document.querySelector(".email").innerText = posts.email
+            document.querySelector(".phone").innerText = posts.phone
+            document.querySelector(".website").innerText = posts.website + `  ` + posts.phone
+            document.querySelector(".address").innerText = `${posts.address.street}, ${posts.address.suite}, ${posts.address.city}` 
+            document.querySelector(".company").innerText = posts.company.name
+        }
+        getUsers()
+    </script>
+
+
+</body>
+</html>
